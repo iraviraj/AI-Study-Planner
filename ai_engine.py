@@ -3,11 +3,11 @@ import json
 import os
 
 # 👇 YOUR KEY
-API_KEY = "PASTE_YOUR_KEY_HERE" 
+API_KEY = "AIzaSyDUQWmmI5aVSE142oYt2b9TvkLcmNZP9Q0" 
 
 genai.configure(api_key=API_KEY)
 
-# ✅ USING THE EXACT NAME FROM YOUR LIST
+# ✅ CHANGED TO 'gemini-flash-latest' (This solves the 404 and has 1500 RPD)
 model = genai.GenerativeModel('gemini-flash-latest')
 
 def analyze_syllabus_and_prioritize(syllabus_text):
